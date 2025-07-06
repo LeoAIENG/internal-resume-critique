@@ -39,14 +39,14 @@ checkpointer:
     value:
         _component_: torchtune.training.FullModelHFCheckpointer
         adapter_checkpoint: adapter_0.pt
-        checkpoint_dir: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_2_20k-adapter-rev_1
+        checkpoint_dir: checkpoint/leoaiengai/resume-critique-llama3_1_8b-tt_lora-model_2_20k-adapter-rev_1
         checkpoint_files:
             - hf_model_0001_0.pt
             - hf_model_0002_0.pt
             - hf_model_0003_0.pt
             - hf_model_0004_0.pt
         model_type: LLAMA3
-        output_dir: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_2_20k-adapter-rev_1
+        output_dir: checkpoint/leoaiengai/resume-critique-llama3_1_8b-tt_lora-model_2_20k-adapter-rev_1
         recipe_checkpoint: recipe_state.pt
 compile:
     value: false
@@ -106,7 +106,7 @@ optimizer:
         lr: 0.0003
         weight_decay: 0.01
 output_dir:
-    value: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_2_20k-adapter-rev_1
+    value: checkpoint/leoaiengai/resume-critique-llama3_1_8b-tt_lora-model_2_20k-adapter-rev_1
 profiler:
     value:
         _component_: torchtune.training.setup_torch_profiler
@@ -115,7 +115,7 @@ profiler:
         cuda: true
         enabled: false
         num_cycles: 1
-        output_dir: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_2_20k-adapter-rev_1/profiling_outputs
+        output_dir: checkpoint/leoaiengai/resume-critique-llama3_1_8b-tt_lora-model_2_20k-adapter-rev_1/profiling_outputs
         profile_memory: false
         record_shapes: true
         wait_steps: 5

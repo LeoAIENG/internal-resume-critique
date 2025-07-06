@@ -15,7 +15,7 @@
     "metric_logger.log_dir=logs/"
   ],
   "program": "/home/ubuntu/miniconda3/lib/python3.12/site-packages/recipes/lora_finetune_single_device.py",
-  "email": "leonardo@multimodal.dev",
+  "email": "leonardo@leoaieng.dev",
   "root": "logs/",
   "host": "internal-mm-ft-2-1",
   "username": "ubuntu",

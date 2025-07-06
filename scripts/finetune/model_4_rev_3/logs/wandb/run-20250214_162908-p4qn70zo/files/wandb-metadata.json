@@ -19,7 +19,7 @@
     "remote": "git@github.com:leoaieng/internal-foundry-fine-tune.git",
     "commit": "a0cd92c6ad28e363a2a9920da6cd50c2a85d8764"
   },
-  "email": "leonardo@multimodal.dev",
+  "email": "leonardo@leoaieng.dev",
   "root": "logs/",
   "host": "confused-crayfish-1",
   "username": "ubuntu",

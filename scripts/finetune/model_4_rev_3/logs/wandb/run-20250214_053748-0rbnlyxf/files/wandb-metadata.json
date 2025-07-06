@@ -19,7 +19,7 @@
     "remote": "git@github.com:leoaieng/internal-foundry-fine-tune.git",
     "commit": "23881a46cebf10b0c30a10c62341d275f506c80d"
   },
-  "email": "leonardo@multimodal.dev",
+  "email": "leonardo@leoaieng.dev",
   "root": "logs/",
   "host": "conservation-earwig-1",
   "username": "ubuntu",

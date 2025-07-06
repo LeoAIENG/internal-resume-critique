@@ -19,7 +19,7 @@
     "remote": "git@github.com:leoaieng/interntal-fine-tune-foundry.git",
     "commit": "31653dd2ffd495aa0e496b58defb7571f28b7a2d"
   },
-  "email": "leonardo@multimodal.dev",
+  "email": "leonardo@leoaieng.dev",
   "root": "logs/",
   "host": "interesting-cardinal-1",
   "username": "ubuntu",

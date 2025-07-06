@@ -7,19 +7,19 @@
     "config/llama_3_1_8b_lora_distributed.yaml",
     "tokenizer.path=base_model/original/tokenizer.model",
     "checkpointer.checkpoint_dir=base_model/",
-    "checkpointer.output_dir=checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_2",
+    "checkpointer.output_dir=checkpoint/leoaiengai/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_2",
     "dataset.data_files=data/resume_critique_model_1.jsonl",
     "metric_logger.group=resume-critique",
     "metric_logger.name=run-resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_2",
-    "output_dir=checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_2",
+    "output_dir=checkpoint/leoaiengai/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_2",
     "metric_logger.log_dir=logs/"
   ],
   "program": "/home/ubuntu/miniconda3/lib/python3.12/site-packages/recipes/lora_finetune_distributed.py",
   "git": {
-    "remote": "git@github.com:leo-multimodal/interntal-fine-tune-foundry.git",
+    "remote": "git@github.com:leo-leoaieng/interntal-fine-tune-foundry.git",
     "commit": "9e37382d9f6a537bd3875223388346f085135767"
   },
-  "email": "leonardo@multimodal.dev",
+  "email": "leonardo@leoaieng.dev",
   "root": "logs/",
   "host": "internal-mm-ft-ex2-1",
   "username": "ubuntu",

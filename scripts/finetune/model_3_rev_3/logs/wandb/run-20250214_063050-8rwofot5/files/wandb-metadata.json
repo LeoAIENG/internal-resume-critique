@@ -19,7 +19,7 @@
     "remote": "git@github.com:leoaieng/internal-foundry-fine-tune.git",
     "commit": "864e3bb988366e07af4473d64a2e4dc84429205f"
   },
-  "email": "leonardo@multimodal.dev",
+  "email": "leonardo@leoaieng.dev",
   "root": "logs/",
   "host": "ytterbic-tortoise-1",
   "username": "ubuntu",
