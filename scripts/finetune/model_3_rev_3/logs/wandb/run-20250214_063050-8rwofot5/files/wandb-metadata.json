@@ -1,0 +1,71 @@
+{
+  "os": "Linux-6.5.0-1023-aws-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.12",
+  "startedAt": "2025-02-14T06:30:50.558071Z",
+  "args": [
+    "--config",
+    "config/llama_3_1_8b_lora_distributed.yaml",
+    "tokenizer.path=base_model//original/tokenizer.model",
+    "checkpointer.checkpoint_dir=base_model/",
+    "checkpointer.output_dir=checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_3_2k-adapter-rev_3",
+    "dataset.data_files=data/resume_critique_model_3_v2.jsonl",
+    "metric_logger.group=resume-critique",
+    "metric_logger.name=run-resume-critique-llama3_1_8b-tt_lora-model_3_2k-adapter-rev_3",
+    "output_dir=checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_3_2k-adapter-rev_3",
+    "metric_logger.log_dir=logs/"
+  ],
+  "program": "/home/ubuntu/.local/lib/python3.10/site-packages/recipes/lora_finetune_distributed.py",
+  "git": {
+    "remote": "git@github.com:multimodalcompany/internal-foundry-fine-tune.git",
+    "commit": "864e3bb988366e07af4473d64a2e4dc84429205f"
+  },
+  "email": "leonardo@multimodal.dev",
+  "root": "logs/",
+  "host": "ytterbic-tortoise-1",
+  "username": "ubuntu",
+  "executable": "/usr/bin/python3",
+  "cpu_count": 96,
+  "cpu_count_logical": 96,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "251555209216",
+      "used": "42206945280"
+    }
+  },
+  "memory": {
+    "total": "906640302080"
+  },
+  "cpu": {
+    "count": 96,
+    "countLogical": 96
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

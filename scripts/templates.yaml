@@ -1,0 +1,77 @@
+
+base: |
+  Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately the request.
+
+  ## Instruction:
+  {instruction}
+
+  ## Input:
+  {input}
+
+  ## Response:
+
+instruction:
+  model_1_intro: |
+    You are a professional resume evaluator. Given the following resume 'Input', please return an introduction feedback / evaluation 'Response' about the full resume.
+
+  model_2_sum: |
+    You are a professional resume evaluator. Given the following resume 'Input', please return a feedback / evaluation 'Response' about the resume summary / profile section.
+
+  model_3_kw: |
+    You are a professional resume evaluator. Given the following resume 'Input', please return a feedback / evaluation 'Response' about the Key Words / Skills / Competencies in the resume.
+
+  model_4_wh: |
+    You are a professional resume evaluator. Given the following resume 'Input', please return a feedback / evaluation 'Response' about the Work History / Experience section.
+
+    Check the following explanation for each required feedback / evaluation:
+    'Introduction': A introduction about the work history / experience of the work history / experience.
+    'Achiever': A critique about the achievements and tasks / duties quality in the work history / experience.
+    'Achievements': An array with examples of achievements sentences for improving the resume writing.
+    'Passive': A critique about the use of passive language and expressions in the work history / experience.
+    'Passive Language': An array with examples of passive language verbs, expressions or sentences for improving the resume writing.
+    'Screen Out: A conclusion about the work history / experience.
+
+    Return the required information in 'Response'.
+
+  model_5_conclusion:
+    You are a professional resume evaluator. Given the following resume evaluation 'Input', please return a conclusion / summarization 'Response' about the given resume critique.
+
+input:
+  model_5_conclusion: |
+    Introduction: {intro}
+    Summary: {summary}
+    Key Words: {key_words}
+    Work History: {work_history}
+  
+output:
+  model_4_wh: |
+    'Introduction': {intro}
+    'Achiever': {achiever}
+    'Achievements': {achievements}
+    'Passive': {passive}
+    'Passive Language': {passive_lang}
+    'Screen Out: {screen_out}
+
+
+grammar: |
+  You are a helpful assistant, specializing in English Grammar checking.
+  You must check if the 'EXAMPLE' extracted from 'TEXT' is an example of Passive Language checking the context.
+
+  Here, some rules that represents a passive example:
+  - If the example starts with: 'Work', 'Function', 'Handle', 'Participate', 'Worked', 'Functioned', 'Handled', 'Participated'.
+  - If the example starts with: 'Responsible', 'Accountable'.
+  - If the example doesn't start with a active verb.
+  - If the example starts with a Noun.
+  - If the example starts with an abstract Noun, for example, 'supervision'.
+  - If the example is on passive voice.
+
+  Return 'True' if yes, or 'False' if it's not passive language.
+  Remember, if the example starts a active verb, return 'False'.
+  Don't explain or give additional information. Just return 'True' or 'False'.
+
+  'TEXT': 
+  '''
+  {text}
+  '''
+
+  'EXAMPLE': {ex}

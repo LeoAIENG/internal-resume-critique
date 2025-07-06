@@ -1,0 +1,139 @@
+_wandb:
+    value:
+        cli_version: 0.19.0
+        m:
+            - "1": global_step
+              "6":
+                - 3
+              "7": []
+        python_version: 3.12.7
+        t:
+            "1":
+                - 1
+                - 49
+                - 51
+                - 55
+            "2":
+                - 1
+                - 49
+                - 51
+                - 55
+            "3":
+                - 3
+                - 7
+                - 13
+                - 23
+                - 55
+                - 66
+            "4": 3.12.7
+            "5": 0.19.0
+            "8":
+                - 5
+            "9":
+                "2": torchtune
+            "12": 0.19.0
+            "13": linux-x86_64
+batch_size:
+    value: 1
+checkpointer:
+    value:
+        _component_: torchtune.training.FullModelHFCheckpointer
+        checkpoint_dir: base_model/
+        checkpoint_files:
+            - model-00001-of-00004.safetensors
+            - model-00002-of-00004.safetensors
+            - model-00003-of-00004.safetensors
+            - model-00004-of-00004.safetensors
+        model_type: LLAMA3
+        output_dir: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_1
+        recipe_checkpoint: null
+compile:
+    value: false
+dataset:
+    value:
+        _component_: torchtune.datasets.instruct_dataset
+        data_files: data/resume_critique_model_1.jsonl
+        max_seq_len: 1024
+        packed: false
+        source: json
+        template: torchtune.data.AlpacaInstructTemplate
+        train_on_input: true
+device:
+    value: cuda
+dtype:
+    value: bf16
+enable_activation_checkpointing:
+    value: true
+enable_activation_offloading:
+    value: false
+epochs:
+    value: 2
+gradient_accumulation_steps:
+    value: 8
+log_every_n_steps:
+    value: 1
+log_peak_memory_stats:
+    value: true
+loss:
+    value:
+        _component_: torchtune.modules.loss.CEWithChunkedOutputLoss
+lr_scheduler:
+    value:
+        _component_: torchtune.training.lr_schedulers.get_cosine_schedule_with_warmup
+        num_warmup_steps: 20
+max_steps_per_epoch:
+    value: null
+metric_logger:
+    value:
+        _component_: torchtune.training.metric_logging.WandBLogger
+        group: resume-critique
+        log_dir: logs/
+        name: run-resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_1
+model:
+    value:
+        _component_: torchtune.models.llama3_1.lora_llama3_1_8b
+        apply_lora_to_mlp: true
+        apply_lora_to_output: false
+        lora_alpha: 16
+        lora_attn_modules:
+            - q_proj
+            - v_proj
+            - output_proj
+        lora_dropout: 0
+        lora_rank: 8
+optimizer:
+    value:
+        _component_: torch.optim.AdamW
+        fused: true
+        lr: 0.0003
+        weight_decay: 0.01
+output_dir:
+    value: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_1
+profiler:
+    value:
+        _component_: torchtune.training.setup_torch_profiler
+        active_steps: 2
+        cpu: true
+        cuda: true
+        enabled: false
+        num_cycles: 1
+        output_dir: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_1/profiling_outputs
+        profile_memory: false
+        record_shapes: true
+        wait_steps: 5
+        warmup_steps: 3
+        with_flops: false
+        with_stack: false
+resume_from_checkpoint:
+    value: false
+save_adapter_weights_only:
+    value: false
+seed:
+    value: 42
+shuffle:
+    value: true
+tokenizer:
+    value:
+        _component_: torchtune.models.llama3.llama3_tokenizer
+        max_seq_len: 1024
+        path: base_model/original/tokenizer.model

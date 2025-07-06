@@ -1,0 +1,1 @@
+{"peak_memory_alloc":56.35239553451538,"_timestamp":1.733937545327152e+09,"_step":5,"tokens_per_second_per_gpu":1084.1483154296875,"peak_memory_reserved":78.34375,"global_step":6,"_wandb":{"runtime":55},"peak_memory_active":56.35239553451538,"lr":5.9999999999999995e-05,"loss":2.565978527069092,"_runtime":52.628465377}

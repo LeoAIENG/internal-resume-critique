@@ -1,0 +1,7 @@
+torch==2.5.1
+torchao==0.6.1
+torchvision==0.20.1
+torchtune==0.4.0
+wandb==0.19.0
+python-dotenv==1.0.1
+peft

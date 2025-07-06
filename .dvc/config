@@ -1,0 +1,4 @@
+[core]
+    remote = internal-resume-critique
+['remote "internal-resume-critique"']
+    url = s3://projects-data-versioning/internal-resume-critique

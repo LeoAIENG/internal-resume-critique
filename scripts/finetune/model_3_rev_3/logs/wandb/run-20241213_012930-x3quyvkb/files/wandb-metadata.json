@@ -1,0 +1,71 @@
+{
+  "os": "Linux-6.5.0-1023-aws-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.7",
+  "startedAt": "2024-12-13T01:29:30.999985Z",
+  "args": [
+    "--config",
+    "config/llama_3_1_8b_lora_distributed.yaml",
+    "tokenizer.path=base_model//original/tokenizer.model",
+    "checkpointer.checkpoint_dir=base_model/",
+    "checkpointer.output_dir=checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_3_20k-adapter-rev_2",
+    "dataset.data_files=data/resume_critique_model_3.jsonl",
+    "metric_logger.group=resume-critique",
+    "metric_logger.name=run-resume-critique-llama3_1_8b-tt_lora-model_3_20k-adapter-rev_2",
+    "output_dir=checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_3_20k-adapter-rev_2",
+    "metric_logger.log_dir=logs/"
+  ],
+  "program": "/home/ubuntu/miniconda3/lib/python3.12/site-packages/recipes/lora_finetune_distributed.py",
+  "git": {
+    "remote": "git@github.com:leo-multimodal/interntal-fine-tune-foundry.git",
+    "commit": "31653dd2ffd495aa0e496b58defb7571f28b7a2d"
+  },
+  "email": "leonardo@multimodal.dev",
+  "root": "logs/",
+  "host": "early-moose-1",
+  "username": "ubuntu",
+  "executable": "/home/ubuntu/miniconda3/bin/python",
+  "cpu_count": 96,
+  "cpu_count_logical": 96,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "251555209216",
+      "used": "44790120448"
+    }
+  },
+  "memory": {
+    "total": "906640334848"
+  },
+  "cpu": {
+    "count": 96,
+    "countLogical": 96
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.2"
+}
