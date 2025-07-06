@@ -1,2 +1,5 @@
 # internal-resume-critique
-Finetuning for Resume Feedback system
+Finetuning Llama 3.1 for Resume Feedback system
+
+Data Strucutre (DVC):
+![][images/data_structure.png]
