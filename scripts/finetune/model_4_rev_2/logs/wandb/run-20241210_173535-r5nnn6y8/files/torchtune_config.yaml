@@ -1,4 +1,4 @@
-output_dir: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_1
+output_dir: checkpoint/leoaieng/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_1
 model:
   _component_: torchtune.models.llama3_1.lora_llama3_1_8b
   lora_attn_modules:
@@ -23,7 +23,7 @@ checkpointer:
   - model-00003-of-00004.safetensors
   - model-00004-of-00004.safetensors
   recipe_checkpoint: null
-  output_dir: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_1
+  output_dir: checkpoint/leoaieng/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_1
   model_type: LLAMA3
 resume_from_checkpoint: false
 save_adapter_weights_only: false

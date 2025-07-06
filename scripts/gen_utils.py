@@ -60,7 +60,7 @@ def num_tokens_from_string(string: str, encoding_name: str="cl100k_base") -> int
 azure_openai_client = AzureOpenAI(
     api_key=os.environ["AZURE_OPENAI_API_KEY"],
     api_version="2024-04-01-preview",
-    azure_endpoint="https://multimodal-azure-openai-instance.openai.azure.com"
+    azure_endpoint="https://leoaieng-azure-openai-instance.openai.azure.com"
 )
 
 def check_ratelimit(prompt):

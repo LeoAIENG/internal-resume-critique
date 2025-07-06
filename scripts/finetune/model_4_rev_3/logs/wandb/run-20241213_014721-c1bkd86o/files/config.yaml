@@ -82,7 +82,7 @@ checkpointer:
             - model-00003-of-00004.safetensors
             - model-00004-of-00004.safetensors
         model_type: LLAMA3
-        output_dir: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_4_20k-adapter-rev_1
+        output_dir: checkpoint/leoaieng/resume-critique-llama3_1_8b-tt_lora-model_4_20k-adapter-rev_1
         recipe_checkpoint: null
 compile:
     value: false
@@ -142,7 +142,7 @@ optimizer:
         lr: 0.0003
         weight_decay: 0.01
 output_dir:
-    value: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_4_20k-adapter-rev_1
+    value: checkpoint/leoaieng/resume-critique-llama3_1_8b-tt_lora-model_4_20k-adapter-rev_1
 profiler:
     value:
         _component_: torchtune.training.setup_torch_profiler
@@ -151,7 +151,7 @@ profiler:
         cuda: true
         enabled: false
         num_cycles: 1
-        output_dir: checkpoint/multimodalai/resume-critique-llama3_1_8b-tt_lora-model_4_20k-adapter-rev_1/profiling_outputs
+        output_dir: checkpoint/leoaieng/resume-critique-llama3_1_8b-tt_lora-model_4_20k-adapter-rev_1/profiling_outputs
         profile_memory: false
         record_shapes: true
         wait_steps: 5

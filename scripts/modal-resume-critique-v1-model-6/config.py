@@ -9,12 +9,12 @@ HF_TOKEN_KEY = "HUGGING_FACE_HUB_TOKEN"
 
 # Image
 FINE_TUNE_MODELS = {
-    1: "multimodalai/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_3",
-    2: "multimodalai/resume-critique-llama3_1_8b-tt_lora-model_2_20k-adapter-rev_1",
-    3: "multimodalai/resume-critique-llama3_1_8b-tt_lora-model_3_2k-adapter-rev_3",
-    4: "multimodalai/resume-critique-llama3_1_8b-tt_lora-model_4_20k-adapter-rev_1",
-    5: "multimodalai/resume-critique-llama3_1_8b-tt_lora-model_5_20k-adapter-rev_1",
-    6: "multimodalai/resume-critique-llama3_1_8b-tt_lora-model_4_2k-adapter-rev_2"
+    1: "leoaieng/resume-critique-llama3_1_8b-tt_lora-model_1_20k-adapter-rev_3",
+    2: "leoaieng/resume-critique-llama3_1_8b-tt_lora-model_2_20k-adapter-rev_1",
+    3: "leoaieng/resume-critique-llama3_1_8b-tt_lora-model_3_2k-adapter-rev_3",
+    4: "leoaieng/resume-critique-llama3_1_8b-tt_lora-model_4_20k-adapter-rev_1",
+    5: "leoaieng/resume-critique-llama3_1_8b-tt_lora-model_5_20k-adapter-rev_1",
+    6: "leoaieng/resume-critique-llama3_1_8b-tt_lora-model_4_2k-adapter-rev_2"
 }
 FINE_TUNE_MODEL_HF_ID = FINE_TUNE_MODELS[MODEL_N]
 
