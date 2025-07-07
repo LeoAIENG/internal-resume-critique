@@ -1,19 +1,13 @@
 # Resume Critique
 
-Finetuning Llama 3.1 for Resume Feedback system
+Finetuning Llama 3.1 for Resume Feedback application
 
 6 models finetuned for giving feedback about each Resume section.
 
-
-## Data Strucutre (DVC):  
-![](images/data_structure.png)
-
-
-## Models Repo (<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="drawing" width="30"/>):
-https://huggingface.co/leoitcode
-
-
 ## Models:
+
+### Repo:
+<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="drawing" width="30"/> https://huggingface.co/leoitcode
 
 ### Model 1:
 Resume Introduction Section Feedback
@@ -38,3 +32,9 @@ Resume General Conclusion Section Feedback
 
 ### Model 6:
 Resume Work History / Passive Language Section Feedback
+
+
+## Data Strucutre (DVC):  
+![](images/data_structure.png)
+
+
